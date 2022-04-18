@@ -106,8 +106,8 @@ for cls in [B, C, D]:
         print("B")
 ```
 
-    Note :
-    Jika klausa *except* dibalik penempatannya dengan yang berada pada baris pertama, maka program akan dicetak sesuai dengan pencocokan pada klausa pertama yakni *except*. 
+Note :
+Jika klausa *except* dibalik penempatannya dengan yang berada pada baris pertama, maka program akan dicetak sesuai dengan pencocokan pada klausa pertama yakni *except*. 
 
 Semua jenis *exception* mewarisi turunan dari *BaseException*, sehingga dapat digunakan sebagai karakter pengganti. Walaupun begitu, pengunaan *exception* ini sangat rawan sehingga harus hati hati, berikut ini contoh implementasi pada interpreter Python :
 
@@ -127,8 +127,8 @@ except BaseException as err:
     raise
 ```
 
-    Note :
-    Sebagai alternatif, klausa exception terakhir pada baris program dapat menghilangkan nama exception, namun untuk pengambilan nilainya harus diambil dengan menggunakan perintah sys.exception().
+Note :
+Sebagai alternatif, klausa exception terakhir pada baris program dapat menghilangkan nama exception, namun untuk pengambilan nilainya harus diambil dengan menggunakan perintah sys.exception().
 
 Pernyataan *try .... except* juga memiliki opsi klausa *else*, yang, jika ada, dan semuanya haruslah mengikuti klausa *except*. Jika klausa *try* tidak memunculkan ekspresi maka perintah sebelumnya dapat berguna sebagai kode yang dapat dijalankan. Berikut ini merupakan contoh implementasinya :
 
@@ -168,8 +168,8 @@ x = spam
 y = eggs
 ```
 
-    Note :
-    Jika sebuah exception memiliki argumen, maka argumen tersebut akan dicetak sebagai bagian terakhir atau sebagai detail dari pesan untuk exception yang tidak ditangani. 
+Note :
+Jika sebuah exception memiliki argumen, maka argumen tersebut akan dicetak sebagai bagian terakhir atau sebagai detail dari pesan untuk exception yang tidak ditangani. 
 
 *Exception Handler* tidak hanya untuk menangani eksepsi yang sedang terjadi di klausa *try*, tetapi juga jika hal yang sama terjadi didalam fungsi yang dipanggil di klausa *try*. Berikut ini merupakan contoh penerapannya :
 
@@ -245,8 +245,8 @@ Traceback (most recent call last):
 RuntimeError: Failed to open database
 ```
 
-    Note :
-    Chaining exception akan muncul secara otomatis ketika exception dinaikan di dalam bagian except atau finally. Hal ini dapat dinonaktifkan dengan menggunakan idiom "from none".
+Note :
+Chaining exception akan muncul secara otomatis ketika exception dinaikan di dalam bagian except atau finally. Hal ini dapat dinonaktifkan dengan menggunakan idiom "from none".
 
 Contoh implementasi menonaktifkan *chaining exception* pada program didalam interpreter Python :
 ```python
@@ -283,8 +283,8 @@ Traceback (most recent call last):
 KeyboardInterrupt
 ```
 
-    Note :
-    Jika didalam sebuah program terdapat klausa finally, klausa tersebut akan mengeksekusi task terakhir sebelum pernyataan try selesai. Ketika klausa finally berjalan maka pernyataan try akan di periksa, apakah pernyataan tersebut menghasilkan sebuah exception atau tidak. 
+Note :
+Jika didalam sebuah program terdapat klausa finally, klausa tersebut akan mengeksekusi task terakhir sebelum pernyataan try selesai. Ketika klausa finally berjalan maka pernyataan try akan di periksa, apakah pernyataan tersebut menghasilkan sebuah exception atau tidak. 
 
 Poin poin yang kerap terjadi ketika pada sebuah program muncul *exception* yang lebih kompleks :
 - Jika *exception* terjadi selama proses eksekusi klausa *try*, *exception* dapat langsung ditangani oleh klausa *except*. Jika eksepsi tidak ditangani oleh klausa *except*, maka eksepsi akan dimunculkan kembali setelah klausa *finally* selesai dieksekusi. 
@@ -411,8 +411,8 @@ There were SystemErrors
       +------------------------------------
 ```
 
-    Note :
-    Exceptions nested dalam grup exception haruslah berupa instance dan bukan tipe. Ini karena dalam praktiknya exception yang telah dimunculkan dan ditangkap oleh program.
+Note :
+Exceptions nested dalam grup exception haruslah berupa instance dan bukan tipe. Ini karena dalam praktiknya exception yang telah dimunculkan dan ditangkap oleh program.
 
 Berikut ini merupakan pola yang dapat dilakukan untuk praktik *Exception nested* :
 
